@@ -2,11 +2,12 @@
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <HTML>
-	<style> a{font-size:50px;} </style>
+	
 <HEAD>
 <META NAME="Generator" CONTENT="Hancom HWP 9.6.1.6189">
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <!--
+a{style-name:"바탕글"; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:normal; font-style:normal; color:#000000;}
 p.HStyle0
 	{style-name:"바탕글"; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:normal; font-style:normal; color:#000000;}
 li.HStyle0
