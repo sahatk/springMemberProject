@@ -1046,7 +1046,7 @@ div.HStyle17
 <P CLASS=Hstyle0><h1>실행 동영상</h1>
 <br>
 
-<video src="https://studio.youtube.com/video/fjK0RwJ166s/edit"></video>
+<a href="https://studio.youtube.com/video/fjK0RwJ166s/edit">실행 </a>
 
 </BODY>
 
