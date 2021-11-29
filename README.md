@@ -7,7 +7,8 @@
 <META NAME="Generator" CONTENT="Hancom HWP 9.6.1.6189">
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <!--
-a{style-name:"바탕글"; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:normal; font-style:normal; color:#000000;}
+div.Hstyle100
+	{style-name:"바탕글"; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-	spacing:0; font-weight:normal; font-style:normal; color:#000000;}
 p.HStyle0
 	{style-name:"바탕글"; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0; font-weight:normal; font-style:normal; color:#000000;}
 li.HStyle0
@@ -1047,7 +1048,7 @@ div.HStyle17
 <P CLASS=Hstyle0><h1>실행 동영상</h1>
 <br>
 
-<a href="https://youtu.be/fjK0RwJ166s">실행 동영상</a>
+<A CLASS="Hstyle100" href="https://youtu.be/fjK0RwJ166s">실행 동영상</A>
 
 </BODY>
 
