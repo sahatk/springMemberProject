@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
+	
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.javateam</groupId>
+	<artifactId>springMemberProject</artifactId>
+	<name>springMemberProject</name>
+	<packaging>war</packaging>
+	<version>1.0</version>
+	
+	<properties>
+		
+		<!-- JDK -->
+		<java-version>1.8</java-version>
+		
+		<!-- JEE Web -->
+		<jsp-version>2.3.0</jsp-version>
+		<servlet-version>4.0.0</servlet-version>
+		<jstl-version>1.2</jstl-version>
+		
+		<!-- Spring -->
+		<spring-version>4.3.30.RELEASE</spring-version>
+		
+		<!-- ORM : Spring-JDBC, MyBatis-->
+		<oracle-version>18.3.0.0</oracle-version>
+		<mybatis-version>3.4.6</mybatis-version>
+		<mybatis-spring-version>1.3.3</mybatis-spring-version>
+		
+		<!-- AOP -->
+		<aspectj-version>1.9.7</aspectj-version>
+		
+		<!-- Logging -->
+		<slf4j-version>1.7.30</slf4j-version>
+		<log4j-version>2.14.1</log4j-version>
+		<log4jdbc-version>1.16</log4jdbc-version>
+		
+		<!-- Test -->
+		<junit-version>4.13</junit-version>
+		<hamcrest-version>1.3</hamcrest-version>
+		<json-path-verison>2.5.0</json-path-verison>
+		<mockito-version>3.9.0</mockito-version>
+		
+		<!-- JSON -->
+		<jackson-version>2.13.0</jackson-version>
+		
+		<!-- File Upload -->
+		<commons-fileupload-version>1.4</commons-fileupload-version>
+		<commons-io-version>2.7</commons-io-version>
+		<thumbnailator-version>0.4.12</thumbnailator-version>		
+		
+		<!-- lombok -->
+		<lombok-version>1.18.20</lombok-version>
+		
+		<!-- webjars -->
+		<jquery-version>3.6.0</jquery-version>
+		<bootstrap-version>4.6.1</bootstrap-version>
+		
+	</properties>
+	
+	<!-- Oracle 11g XE 
+	<repositories>
+		<repository>
+			<id>jahia</id>
+			<url>http://maven.jahia.org/maven2/ </url>
+		</repository>
+	</repositories>
+	-->
+	
+	<dependencies>
+		<!-- Spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring-version}</version>
+			<exclusions>
+				<!-- Exclude Commons Logging in favor of SLF4j -->
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				 </exclusion>
+			</exclusions>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring-version}</version>
+		</dependency>
+		
+		<!-- ORM -->
+		<!-- Oracle 18c XE -->
+		<dependency>
+		    <groupId>com.oracle.database.jdbc</groupId>
+		    <artifactId>ojdbc8</artifactId>
+		    <version>${oracle-version}</version>
+		</dependency>
+		
+		<!-- Spring JDBC -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring-version}</version>
+		</dependency>
+		
+		<!-- MyBatis -->
+		<dependency>
+		    <groupId>org.mybatis</groupId>
+		    <artifactId>mybatis</artifactId>
+		    <version>${mybatis-version}</version>
+		</dependency>
+		
+		<!-- MyBatis-Spring -->
+		<dependency>
+		    <groupId>org.mybatis</groupId>
+		    <artifactId>mybatis-spring</artifactId>
+		    <version>${mybatis-spring-version}</version>
+		</dependency>
+
+						
+		<!-- AOP : AspectJ(rt/weaever/tools), Spring-AOP  -->
+		<!-- AspectJ-RT -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>${aspectj-version}</version>
+		</dependency>	
+		
+		<!-- Spring-Aspects -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+			<version>${spring-version}</version>
+		</dependency>
+		
+		<!-- Aspectj-Weaver -->
+		<dependency>
+		    <groupId>org.aspectj</groupId>
+		    <artifactId>aspectjweaver</artifactId>
+		    <version>${aspectj-version}</version>
+		    <scope>runtime</scope>
+		</dependency>
+		
+		<!-- Aspectj-Tools -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjtools</artifactId>
+			<version>${aspectj-version}</version>
+		</dependency>	
+		
+		
+		<!-- Logging : Slf4J, Log4J2, Log4JDBC-->
+		
+		<!-- Slf4J -->		
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j-version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<version>${slf4j-version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		
+		<!-- Log4J2 -->
+		<dependency>
+		    <groupId>org.apache.logging.log4j</groupId>
+		    <artifactId>log4j-core</artifactId>
+		    <version>${log4j-version}</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.apache.logging.log4j</groupId>
+		    <artifactId>log4j-api</artifactId>
+		    <version>${log4j-version}</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.apache.logging.log4j</groupId>
+		    <artifactId>log4j-slf4j-impl</artifactId>
+		    <version>${log4j-version}</version>
+		    <!-- log4j => log4j2 log show/hide -->
+		    <!-- <scope>test</scope> -->
+		</dependency>
+		
+		<!-- Log4JDBC -->
+		<dependency>
+		    <groupId>org.bgee.log4jdbc-log4j2</groupId>
+		    <artifactId>log4jdbc-log4j2-jdbc4.1</artifactId>
+		    <version>${log4jdbc-version}</version>
+		</dependency>
+		
+		<!-- JEE Web -->
+
+		<!-- @Inject -->
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
+				
+		<!-- JSP -->
+		<dependency>
+		    <groupId>javax.servlet.jsp</groupId>
+		    <artifactId>javax.servlet.jsp-api</artifactId>
+		    <version>2.3.0</version>
+		    <scope>provided</scope>
+		</dependency>
+		
+		<!-- Servlet -->
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>javax.servlet-api</artifactId>
+		    <version>4.0.0</version>
+		    <scope>provided</scope>
+		</dependency>
+		
+		<!-- JSTL -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>${jstl-version}</version>
+		</dependency>
+	
+		<!-- Test : jUnit, hamcrest, Spring-Test, Mockito -->
+		
+		<!-- Spring Test -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${spring-version}</version>
+		</dependency>
+		
+		<!-- jUnit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit-version}</version>
+			<scope>test</scope>
+		</dependency>    
+		
+		<!-- hamcrest -->
+		<dependency>
+		    <groupId>org.hamcrest</groupId>
+		    <artifactId>hamcrest-library</artifactId>
+		    <version>${hamcrest-version}</version>
+		    <scope>test</scope>
+		</dependency>
+		
+		<!-- json path -->
+		<dependency>
+		    <groupId>com.jayway.restassured</groupId>
+		    <artifactId>json-path</artifactId>
+		    <version>${json-path-verison}</version>
+		</dependency>
+		
+		<!-- mockito -->
+		<dependency>
+		    <groupId>org.mockito</groupId>
+		    <artifactId>mockito-core</artifactId>
+		    <version>${mockito-version}</version>
+		    <scope>test</scope>
+		</dependency>
+		
+		<!-- JSON : faster-xml jackson(core/databind/annotations) -->    
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-core</artifactId>
+		    <version>${jackson-version}</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-databind</artifactId>
+		    <version>${jackson-version}</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-annotations</artifactId>
+		    <version>${jackson-version}</version>
+		</dependency>
+		
+		<!-- File Upload -->
+
+		<!-- Apache File Upload -->		
+		<dependency>
+		    <groupId>commons-fileupload</groupId>
+		    <artifactId>commons-fileupload</artifactId>
+		    <version>${commons-fileupload-version}</version>
+		</dependency>
+
+		<!-- Apaache Commons IO -->
+		<dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>${commons-io-version}</version>
+		</dependency>
+		
+		<!-- Thumbnailator -->
+		<dependency>
+		    <groupId>net.coobird</groupId>
+		    <artifactId>thumbnailator</artifactId>
+		    <version>${thumbnailator-version}</version>
+		</dependency>
+		
+		<!-- Utility : lombok -->
+		<dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <version>${lombok-version}</version>
+		    <scope>provided</scope>
+		</dependency>
+				
+		<!-- Javascript / WebJars -->
+		
+		<!-- jQuery -->
+		<dependency>
+		    <groupId>org.webjars</groupId>
+		    <artifactId>jquery</artifactId>
+		    <version>${jquery-version}</version>
+		</dependency>
+				
+		<!-- bootstrap -->
+		<dependency>
+		    <groupId>org.webjars</groupId>
+		    <artifactId>bootstrap</artifactId>
+		    <version>${bootstrap-version}</version>
+		</dependency>
+		
+	</dependencies>
+	
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-eclipse-plugin</artifactId>
+                <version>2.9</version>
+                <configuration>
+                    <additionalProjectnatures>
+                        <projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
+                    </additionalProjectnatures>
+                    <additionalBuildcommands>
+                        <buildcommand>org.springframework.ide.eclipse.core.springbuilder</buildcommand>
+                    </additionalBuildcommands>
+                    <downloadSources>true</downloadSources>
+                    <downloadJavadocs>true</downloadJavadocs>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.5.1</version>
+                <configuration>
+                    <source>${java-version}</source>
+                    <target>${java-version}</target>
+                    <compilerArgument>-Xlint:all</compilerArgument>
+                    <showWarnings>true</showWarnings>
+                    <showDeprecation>true</showDeprecation>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.2.1</version>
+                <configuration>
+                    <mainClass>org.test.int1.Main</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
