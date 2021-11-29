@@ -1,0 +1,38 @@
+@Transactional(propagation=Propagation.REQUIRED)
+public boolean insertMember(MemberVO member) {
+	
+	boolean flag = false;
+	TransactionStatus txStatus
+		= transactionManager.getTransaction(new DefaultTransactionDefinition());
+	
+	try {
+		//
+		transactionManager.commit(txStatus);
+		flag = true;
+	} catch (Exception e) {
+		transactionManager.rollback(txStatus);	
+		log.error("MemberService. 저장 에러");
+		e.printStackTrace();
+	}
+	
+	return flag;
+} //
+
+
+@Transactional(readOnly=true)
+public MemberVO getMember(String userid) {
+	
+	log.info("BoardDAO.");
+	
+	MemberVO member = null;
+	
+	try {
+		// TODO
+		
+	} catch (Exception e) {
+		log.error("BoardService. 조회 에러");
+		e.printStackTrace();
+	}
+	
+	return member;
+} //
