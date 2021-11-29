@@ -1013,12 +1013,12 @@ div.HStyle17
 </TABLE>
 
 <P CLASS=Hstyle0><h3>- ERD (Entity Relational Diagram) </h3></P>
-	<h3>Board</h3>
+<P CLASS=Hstyle0><h3>Board</h3>
 <img src =
 	"https://github.com/sahatk/springMemberProject/blob/main/show/board_%ED%85%8C%EC%9D%B4%EB%B8%94.png">
 <br>
 		
-<h3>Member2</h3>
+<P CLASS=Hstyle0><h3>Member2</h3>
 <br>
 <img src =
 	"https://github.com/sahatk/springMemberProject/blob/main/show/member2_%ED%85%8C%EC%9D%B4%EB%B8%94.png">
