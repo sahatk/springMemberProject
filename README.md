@@ -1017,8 +1017,7 @@ div.HStyle17
 	"https://github.com/sahatk/springMemberProject/blob/main/show/board_%ED%85%8C%EC%9D%B4%EB%B8%94.png">
 <br>
 <img src =
-	"https://github.com/sahatk/springMemberProject/blob/main/show/member2_%ED%85%8C%EC%9D%B4%EB%B8%94.png
-" />
+	"https://github.com/sahatk/springMemberProject/blob/main/show/member2_%ED%85%8C%EC%9D%B4%EB%B8%94.png">
 <br>
 <P CLASS=Hstyle0<h3>- 프로젝트 기술사양(Specs)</h3></P>
 
