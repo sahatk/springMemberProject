@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper
+	namespace="com.javateam.springMemberProject.mapper.Member-mapper">
+	
+	<!-- 회원 정보 생성 -->
+	<!-- <insert id="insertMember" 
+			parameterType="com.javateam.springMemberProject.domain.MemberVO"> -->
+	<insert id="insertMember" parameterType="MemberVO">		
+		INSERT INTO member2 VALUES 
+		(#{name}, #{userid}, #{pwd}, #{email}, #{phone}, #{admin})		
+	</insert>
+	
+	<!-- 회원 정보 조회(보기) -->
+	<select id="getMember" parameterType="String" resultType="MemberVO">
+		SELECT * FROM member2 WHERE userid=#{userid}
+	</select>
+	
+	<!-- 회원 정보 수정 -->
+	<update id="updateMember" parameterType="MemberVO">
+		UPDATE member2 
+		SET 
+		pwd =#{pwd},
+		email=#{email},
+		phone=#{phone}
+		where userid=#{userid}
+	</update>
+	
+	<!-- 전체 회원 정보 조회 (페이징) -->
+	<select id="getMembersByPaging" 
+			parameterType="PageDTO" 
+			resultType="MemberVO">
+		SELECT *  
+		FROM (SELECT ROWNUM,  
+		             m.*,  
+		             FLOOR((ROWNUM - 1) / ${limit} + 1) page  
+		      FROM (
+		             SELECT * FROM member2  
+		             ORDER BY userid ASC
+		           ) m  
+		      )  
+		WHERE page = ${page}
+	</select> 
+	
+	<!-- 마지막 페이지 구하기(조회) (페이징) : 전체 회원 조회 -->
+	<select id="getLastPage" parameterType="int" resultType="int">
+		SELECT CEIL(COUNT(*)/#{limit}) FROM member2
+	</select>
+	
+	<!-- 마지막 페이지 구하기 (페이징) : 검색 -->
+	<select id="getSearchLastPage" parameterType="SearchVO" resultType="int">
+		SELECT CEIL(COUNT(*)/${limit}) FROM member2  
+		WHERE ${searchKind} like '%${searchWord}%'
+	</select>	
+	
+	<!-- 개별 회원 정보 삭제 -->
+	<delete id="deleteMember" parameterType="String">
+		DELETE member2 WHERE userid=#{userid}
+	</delete>
+	
+	<!-- 로그인 인증 -->
+	<select id="checkLogin" parameterType="MemberVO" resultType="int">
+		SELECT count(*) FROM member2 
+		WHERE userid=#{userid} AND pwd=#{pwd}
+	</select>
+	
+	<!-- 회원 존재 여부 -->
+	<select id="isMember" parameterType="String" resultType="int">
+		SELECT count(*) FROM member2 WHERE userid=#{userid}
+	</select>
+	
+	<!-- 검색 : 아이디/이메일 (동등 검색) -->
+	<select id="getMemberByIdOrEmail" parameterType="hashmap" resultType="MemberVO">
+		SELECT * FROM member2 
+		WHERE ${searchKind} = #{searchWord}
+		ORDER BY userid ASC
+	</select>
+	
+	<!-- 검색 : 이름/연락처 (유사검색) -->
+	<select id="getMembersByNameOrPhone" parameterType="SearchVO" resultType="MemberVO">
+		SELECT *  
+		FROM (SELECT ROWNUM,  
+		             m.*,  
+		             FLOOR((ROWNUM - 1) / ${limit} + 1) page  
+		      FROM (
+		             SELECT * FROM member2  
+		             WHERE ${searchKind} like '%${searchWord}%'
+		             ORDER BY userid ASC
+		           ) m  
+		      )  
+		WHERE page = ${page}							
+	</select>
+</mapper>

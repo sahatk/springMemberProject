@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<!-- JDBC --> 
+<!-- 	
+	<bean id="dataSourceJDBC" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+		<property name="driverClass" value="oracle.jdbc.OracleDriver" />
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe" />
+		<property name="username" value="java" />
+		<property name="password" value="java" />
+	</bean>	 -->
+	
+	<!-- JDBC : log4JDBC 적용 -->
+	<bean id="dataSourceJDBC" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+		<property name="driverClass" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy" />
+		<property name="url" value="jdbc:log4jdbc:oracle:thin:@localhost:1521:xe" />
+		<property name="username" value="java" />
+		<property name="password" value="java" />
+	</bean>	
+	
+	<!-- MyBatis Session -->
+	<!-- 
+	      참고) https://mybatis.org/mybatis-3/configuration.html -> setting
+	   mapUnderscoreToCamelCase : SQL (snake_case) => Java (camelCase)
+	 -->
+	<bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSourceJDBC" />
+		<!-- 패키지 줄임 -->
+		<property name="typeAliasesPackage" value="com.javateam.springMemberProject.domain" />
+		<property name="transactionFactory">
+			<bean class="org.mybatis.spring.transaction.SpringManagedTransactionFactory" />
+		</property>
+		<property name="mapperLocations" value="classpath*:com/javateam/springMemberProject/mapper/*-mapper.xml" />
+		<property name="configuration">
+			<bean class="org.apache.ibatis.session.Configuration">
+				<property name="mapUnderscoreToCamelCase" value="true" />
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactoryBean" />
+	</bean>
+	
+	
+	<!-- guide : http://mybatis.org/spring/ko/transactions.html -->	
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+  		<constructor-arg ref="dataSourceJDBC" />
+  		<!-- <property name="dataSource" ref="dataSourceJDBC" /> -->
+  		<property name="rollbackOnCommitFailure" value="true" />
+	</bean>
+	
+	<!-- @Transactional -->
+	<tx:annotation-driven transaction-manager="transactionManager"/>
+	
+	<aop:aspectj-autoproxy />
+	
+	<!-- /////////////////////////////////////////////////////// -->
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<!-- Fileupload : 파일 관리자 id(multipartResolver)는 가급적 그대로 사용할 것! -->
+	<bean id="multipartResolver"
+		  class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		  <property name="maxUploadSize" value="52428800" /> 
+		  <!-- 파일 크기 제한 : 50MB = 50 * 1024 * 1024-->
+		  <!--   <property name="defaultEncoding" value="UTF-8" /> -->
+	  	  <!-- 요청을 처리시 사용할 인코딩 방식. 기본값 ISO-8859-1 -->
+  	</bean>			  
+	
+	<!-- File repository : 파일 저장소 -->
+	<bean id="uploadDirResource" class="org.springframework.core.io.FileSystemResource">
+	    <constructor-arg>
+			<value>d:/lsh/upload/</value> 
+	    </constructor-arg>
+	</bean>
+	
+</beans>

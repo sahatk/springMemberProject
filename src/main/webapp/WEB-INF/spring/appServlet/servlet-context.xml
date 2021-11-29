@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
+	
+	<!-- Enables the Spring MVC @Controller programming model -->
+	<annotation-driven />
+
+	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
+	
+	<!-- 자원 : CSS, Javascript, Image ... : /webapp/resources/ -->
+	<resources mapping="/resources/**" location="/resources/" />
+	
+	<!-- Custom CSS : 외장 CSS -->
+	<resources mapping="/css/**" location="/resources/css/" />
+	
+	<!-- Custom Javascript : 사용자 외장 Javascript -->
+	<resources mapping="/js/**" location="/resources/js/" />
+	
+	<!-- WebJars Javascript -->
+	<resources mapping="/webjars/**" location="classpath:/META-INF/resources/webjars/"/>
+	
+	<!-- jQuery (webjars) -->
+	<resources mapping="/jquery/**" 
+		location="classpath:/META-INF/resources/webjars/jquery/3.6.0/"/>
+
+	<!-- bootstrap (webjars) -->
+	<resources mapping="/bootstrap/**" 
+		location="classpath:/META-INF/resources/webjars/bootstrap/4.6.1/"/>
+		
+	<!-- popper (webjars) -->
+	<resources mapping="/popper.js/**" 
+		location="classpath:/META-INF/resources/webjars/popper.js/1.16.0/"/>
+
+	<!-- JSP : /webapp/jsp/ -->
+	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<beans:property name="prefix" value="/jsp/" />
+		<beans:property name="suffix" value=".jsp" />
+	</beans:bean>
+	
+	<!-- Component path : DAO, Service, Controller, RestController ... -->
+	<context:component-scan base-package="com.javateam.springMemberProject">
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Component"/>
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+		<context:include-filter type="annotation" expression="org.springframework.web.bind.annotation.RestController"/>
+	</context:component-scan>
+	
+	<!-- 인증/권한 인터셉터(interceptor) -->
+	<interceptors>
+		
+		<!-- 인증용 -->
+		<!-- 
+ 		<interceptor>
+			<mapping path="/auth/login.do"/>
+			<beans:bean class="com.javateam.springMemberProject.service.AuthAdminInterceptorService" />
+		</interceptor> 
+		-->
+		
+		<!-- 관리자 전용 -->
+		<interceptor>
+			<mapping path="/admin/**"/>
+			<beans:bean class="com.javateam.springMemberProject.service.AuthAdminInterceptorService" />
+		</interceptor>
+		
+		<!-- 회원 전용 -->
+		<!-- 회원 -->
+		<interceptor>
+			<mapping path="/member/**" />
+			
+			<!-- 회원가입 : 비회원용 (제외) -->
+			<exclude-mapping path="/member/member_join.do"/>
+			<exclude-mapping path="/member/join_action.do"/>
+			<beans:bean class="com.javateam.springMemberProject.service.AuthMemberInterceptorService" />
+		</interceptor>
+		
+		<!-- 게시판 -->
+		<interceptor>
+			<mapping path="/board/**" />
+			<beans:bean class="com.javateam.springMemberProject.service.AuthMemberInterceptorService" />
+		</interceptor>
+		
+	</interceptors>
+	
+</beans:beans>
