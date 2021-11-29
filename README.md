@@ -2,7 +2,7 @@
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <HTML>
-
+	<style> a{font-size:50px;} </style>
 <HEAD>
 <META NAME="Generator" CONTENT="Hancom HWP 9.6.1.6189">
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
