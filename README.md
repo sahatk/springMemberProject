@@ -1043,6 +1043,11 @@ div.HStyle17
 	"https://github.com/sahatk/springMemberProject/blob/main/show/url_mappings.png">
 <br>
 
+<P CLASS=Hstyle0><h1>실행 동영상</h1>
+<br>
+
+<video src="https://studio.youtube.com/video/fjK0RwJ166s/edit"></video>
+
 </BODY>
 
 </HTML>
