@@ -122,12 +122,6 @@ div.HStyle17
 </HEAD>
 
 <BODY>
-
-<P CLASS=Hstyle0><h1>실행 동영상</h1>
-<br>
-
-<A HREF="https://youtu.be/fjK0RwJ166s">실행 동영상</A>
-
 	
 <P CLASS=HStyle0><h3>- 프로젝트 로드맵(Roadmap)</h3></P>
 <img src="https://github.com/James-Lee/spring_member_board_project/blob/main/show/roadmap.PNG">
@@ -1049,6 +1043,10 @@ div.HStyle17
 <img src =
 	"https://github.com/sahatk/springMemberProject/blob/main/show/url_mappings.png">
 <br>
+
+<P CLASS=Hstyle0><h1>실행 동영상</h1>
+
+<A HREF="https://youtu.be/fjK0RwJ166s">실행 동영상</A>
 
 
 
