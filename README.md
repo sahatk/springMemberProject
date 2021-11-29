@@ -1037,6 +1037,12 @@ div.HStyle17
 	"https://github.com/sahatk/springMemberProject/blob/main/show/servlet-context.png">
 <br>
 
+<P CLASS=Hstyle0><h3>servlet-context</h3>
+<br>
+<img src =
+	"https://github.com/sahatk/springMemberProject/blob/main/show/url_mappings.png">
+<br>
+
 </BODY>
 
 </HTML>
