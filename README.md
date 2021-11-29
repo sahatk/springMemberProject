@@ -1046,7 +1046,7 @@ div.HStyle17
 <P CLASS=Hstyle0><h1>실행 동영상</h1>
 <br>
 
-<a href="https://youtu.be/fjK0RwJ166s">실행 </a>
+<a href="https://youtu.be/fjK0RwJ166s">실행 동영상</a>
 
 </BODY>
 
