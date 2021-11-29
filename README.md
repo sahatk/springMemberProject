@@ -1018,7 +1018,7 @@ div.HStyle17
 	"https://github.com/sahatk/springMemberProject/blob/main/show/board_%ED%85%8C%EC%9D%B4%EB%B8%94.png">
 <br>
 		
-	<h3>member2</h3>
+<h3>member2</h3>
 <br>
 <img src =
 	"https://github.com/sahatk/springMemberProject/blob/main/show/member2_%ED%85%8C%EC%9D%B4%EB%B8%94.png">
