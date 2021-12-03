@@ -1091,6 +1091,24 @@ div.HStyle17
      	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/boradList.PNG">
 <br>
 
+<P CLASS=Hstyle0><h3>게시글 검색 리스트</h3>
+<br>
+<a href =
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardSearchList.jsp">게시글 검색 리스트.jsp </a>
+<br>
+<img src = 
+     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/boardSearchList.PNG">
+<br>
+
+<P CLASS=Hstyle0><h3>게시글 상세 보기</h3>
+<br>
+<a href =
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardSearchList.jsp">게시글 상세 보기.jsp </a>
+<br>
+<img src = 
+     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/boardView.PNG">
+<br>
+
 <P CLASS=Hstyle0><h1>실행 동영상</h1>
 
 <A HREF="https://youtu.be/fjK0RwJ166s">실행 동영상</A>
