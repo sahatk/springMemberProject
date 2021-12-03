@@ -1103,10 +1103,10 @@ div.HStyle17
 <P CLASS=Hstyle0><h3>게시글 상세 보기</h3>
 <br>
 <a href =
-     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardSearchList.jsp">게시글 상세 보기.jsp </a>
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardView.jsp">게시글 상세 보기.jsp </a>
 <br>
 <img src = 
-     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardView.jsp">
+     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/board/boardView.PNG">
 <br>
 
 <P CLASS=Hstyle0><h1>실행 동영상</h1>
