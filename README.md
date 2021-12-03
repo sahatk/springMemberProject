@@ -1049,7 +1049,7 @@ div.HStyle17
 <P CLASS=Hstyle0><h3>검색 회원 현황</h3>
 <br>
 <a href =
-     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/admin/search_members_list.jsp">검색 회원 현황.jsp </a>
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/admin/search_members_list.jsp">검색 회원 현황(code).jsp </a>
 <br>
 <img src = 
      	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/search_members_list.PNG">
