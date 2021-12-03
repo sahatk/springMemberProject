@@ -1058,7 +1058,7 @@ div.HStyle17
 <P CLASS=Hstyle0><h3>인자 현황</h3>
 <br>
 <a href =
-     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/menu/param_dash_board.jsp">인자(Code).jsp </a>
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/menu/param_dash_board.jsp">인자 현황(Code).jsp </a>
 <br>
 <img src = 
      	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/menu/param_dash_board.PNG">
