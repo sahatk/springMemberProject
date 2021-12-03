@@ -1044,9 +1044,16 @@ div.HStyle17
 	"https://github.com/sahatk/springMemberProject/blob/main/show/url_mappings.png">
 <br>
 
+<P CLASS=Hstyle0><h3>회원 검색 현황</h3>
+<br>
+<img src =
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/admin/search_members_list.jsp">
+<br>
+
 <P CLASS=Hstyle0><h1>실행 동영상</h1>
 
 <A HREF="https://youtu.be/fjK0RwJ166s">실행 동영상</A>
+
 
 
 
