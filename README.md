@@ -1058,7 +1058,7 @@ div.HStyle17
 <P CLASS=Hstyle0><h3>전체 회원 현황</h3>
 <br>
 <a href =
-     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/admin/view_members_list.jsp"> 회원 현황(Code).jsp </a>
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/admin/view_members_list.jsp"> 전체 회원 현황(Code).jsp </a>
 <br>
 <img src = 
      	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/view_members_list.PNG">
@@ -1067,7 +1067,7 @@ div.HStyle17
 <P CLASS=Hstyle0><h3>로그인</h3>
 <br>
 <a href =
-     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/auth/login.jsp"> 회원 현황(Code).jsp </a>
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/auth/login.jsp"> 로그인(Code).jsp </a>
 <br>
 <img src = 
      	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/login.PNG">
