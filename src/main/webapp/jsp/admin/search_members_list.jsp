@@ -4,7 +4,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>검색  현황</title>
+<title>회원  현황</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
