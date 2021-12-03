@@ -1145,7 +1145,7 @@ div.HStyle17
 <img src = 
      	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/board/checkSuccess1.PNG">
 <br>
-<h6>게시글  체크 결과<h6>
+<h6>게시글 삭제 체크 결과<h6>
 <img src = 
      	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/board/checkSuccess2.PNG">
 <br>
