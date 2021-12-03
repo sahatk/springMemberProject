@@ -1150,6 +1150,14 @@ div.HStyle17
      	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/board/checkSuccess2.PNG">
 <br>
 
+<P CLASS=Hstyle0><h3>회원가입 폼</h3>
+<br>
+<a href =
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/member/join_form.jsp">회원가입 폼.jsp </a>
+<br>
+<img src = 
+     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/member/join_form.PNG">
+<br>
 
 
 <P CLASS=Hstyle0><h1>실행 동영상</h1>
