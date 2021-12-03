@@ -1052,7 +1052,7 @@ div.HStyle17
      	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/admin/search_members_list.jsp">검색 회원 현황(Code).jsp </a>
 <br>
 <img src = 
-     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/search_members_list.PNG">
+     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/admin/search_members_list.PNG">
 <br>
 
 <P CLASS=Hstyle0><h3>전체 회원 현황</h3>
@@ -1061,7 +1061,7 @@ div.HStyle17
      	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/admin/view_members_list.jsp"> 전체 회원 현황(Code).jsp </a>
 <br>
 <img src = 
-     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/view_members_list.PNG">
+     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/admin/view_members_list.PNG">
 <br>
 
 <P CLASS=Hstyle0><h3>로그인</h3>
@@ -1070,7 +1070,7 @@ div.HStyle17
      	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/auth/login.jsp"> 로그인(Code).jsp </a>
 <br>
 <img src = 
-     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/login.PNG">
+     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/auth/login.PNG">
 <br>
 	
 <P CLASS=Hstyle0><h3>로그아웃</h3>
@@ -1079,7 +1079,7 @@ div.HStyle17
      	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/auth/logout.jsp"> 로그아웃(Code).jsp </a>
 <br>
 <img src = 
-     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/logout.PNG">
+     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/auth/logout.PNG">
 <br>
 
 <P CLASS=Hstyle0><h3>게시글 리스트</h3>
@@ -1088,7 +1088,7 @@ div.HStyle17
      	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardList.jsp">게시글 리스트.jsp </a>
 <br>
 <img src = 
-     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/boradList.PNG">
+     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/board/boradList.PNG">
 <br>
 
 <P CLASS=Hstyle0><h3>게시글 검색 리스트</h3>
@@ -1097,7 +1097,7 @@ div.HStyle17
      	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardSearchList.jsp">게시글 검색 리스트.jsp </a>
 <br>
 <img src = 
-     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/boardSearchList.PNG">
+     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/board/boardSearchList.PNG">
 <br>
 
 <P CLASS=Hstyle0><h3>게시글 상세 보기</h3>
@@ -1106,7 +1106,7 @@ div.HStyle17
      	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardSearchList.jsp">게시글 상세 보기.jsp </a>
 <br>
 <img src = 
-     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/boardView.PNG">
+     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/board/boardView.PNG">
 <br>
 
 <P CLASS=Hstyle0><h1>실행 동영상</h1>
