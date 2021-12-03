@@ -1061,7 +1061,7 @@ div.HStyle17
      	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/menu/param_dash_board.jsp">인자 .jsp </a>
 <br>
 <img src = 
-     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/menu/top.PNG">
+     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/menu/param_dash_board.PNG">
 <br>
 	
 <P CLASS=Hstyle0><h3>검색 회원 현황</h3>
