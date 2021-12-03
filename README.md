@@ -1072,7 +1072,24 @@ div.HStyle17
 <img src = 
      	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/login.PNG">
 <br>
+	
+<P CLASS=Hstyle0><h3>로그아웃</h3>
+<br>
+<a href =
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/auth/logout.jsp"> 로그아웃(Code).jsp </a>
+<br>
+<img src = 
+     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/logout.PNG">
+<br>
 
+<P CLASS=Hstyle0><h3>게시글 리스트</h3>
+<br>
+<a href =
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardList.jsp">게시글 리스트.jsp </a>
+<br>
+<img src = 
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardList.jsp">
+<br>
 
 <P CLASS=Hstyle0><h1>실행 동영상</h1>
 
