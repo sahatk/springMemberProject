@@ -1044,10 +1044,12 @@ div.HStyle17
 	"https://github.com/sahatk/springMemberProject/blob/main/show/url_mappings.png">
 <br>
 
+<H1> JSP </H1>
+	
 <P CLASS=Hstyle0><h3>회원 검색 현황</h3>
 <br>
 <a href =
-     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/admin/search_members_list.jsp">회원 검색 </a>
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/admin/search_members_list.jsp">회원 검색 현황.jsp </a>
 <br>
 
 <P CLASS=Hstyle0><h1>실행 동영상</h1>
