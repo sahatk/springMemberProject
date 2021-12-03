@@ -1159,6 +1159,15 @@ div.HStyle17
      	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/member/join_form.PNG">
 <br>
 
+<P CLASS=Hstyle0><h3>마이 페이지</h3>
+<br>
+<a href =
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/member/my_page.jsp">마이 페이지.jsp </a>
+<br>
+<img src = 
+     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/member/my_page.PNG">
+<br>
+
 
 <P CLASS=Hstyle0><h1>실행 동영상</h1>
 
