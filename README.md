@@ -1109,14 +1109,48 @@ div.HStyle17
      	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/board/boardView.PNG">
 <br>
 
-<P CLASS=Hstyle0><h3>게시글 상세 보기</h3>
+<P CLASS=Hstyle0><h3>게시글 수정</h3>
 <br>
 <a href =
-     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardView.jsp">게시글 상세 보기.jsp </a>
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardUpdate.jsp">게시글 수정.jsp </a>
 <br>
 <img src = 
-     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/board/boardView.PNG">
+     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/board/boardUpdate.PNG">
 <br>
+
+<P CLASS=Hstyle0><h3>게시글 패쓰워드 입력폼</h3>
+<br>
+<a href =
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardCheckPass.jsp">게시글 패쓰워드 입력폼.jsp </a>
+<br>
+<img src = 
+     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/board/boardCheckPass.PNG">
+<br>
+
+<P CLASS=Hstyle0><h3>게시글 등록</h3>
+<br>
+<a href =
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardWrite.jsp">게시글 등록.jsp </a>
+<br>
+<img src = 
+     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/board/boardWrite.PNG">
+<br>
+
+<P CLASS=Hstyle0><h3>체크 결과</h3>
+<br>
+<a href =
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/checkSuccess.jsp">체크 결과.jsp </a>
+<br>
+<h6>게시글 수정 체크 결과<h6>
+<img src = 
+     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/board/checkSuccess1.PNG">
+<br>
+<h6>게시글  체크 결과<h6>
+<img src = 
+     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/board/checkSuccess2.PNG">
+<br>
+
+
 
 <P CLASS=Hstyle0><h1>실행 동영상</h1>
 
