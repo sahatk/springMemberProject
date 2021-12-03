@@ -1046,10 +1046,10 @@ div.HStyle17
 
 <H1> JSP </H1>
 
-<P CLASS=Hstyle0><h3>상단 바</h3>
+<P CLASS=Hstyle0><h3>상단 바(메뉴)</h3>
 <br>
 <a href =
-     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/menu/top.jsp">상단 바.jsp </a>
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/menu/top.jsp">상단 바(Code).jsp </a>
 <br>
 <img src = 
      	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/menu/top.PNG">
@@ -1058,7 +1058,7 @@ div.HStyle17
 <P CLASS=Hstyle0><h3>인자 현황</h3>
 <br>
 <a href =
-     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/menu/param_dash_board.jsp">인자 .jsp </a>
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/menu/param_dash_board.jsp">인자(Code).jsp </a>
 <br>
 <img src = 
      	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/menu/param_dash_board.PNG">
@@ -1103,7 +1103,7 @@ div.HStyle17
 <P CLASS=Hstyle0><h3>게시글 리스트</h3>
 <br>
 <a href =
-     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardList.jsp">게시글 리스트.jsp </a>
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardList.jsp">게시글 리스트(Code).jsp </a>
 <br>
 <img src = 
      	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/board/boradList.PNG">
@@ -1112,7 +1112,7 @@ div.HStyle17
 <P CLASS=Hstyle0><h3>게시글 검색 리스트</h3>
 <br>
 <a href =
-     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardSearchList.jsp">게시글 검색 리스트.jsp </a>
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardSearchList.jsp">게시글 검색 리스트(Code).jsp </a>
 <br>
 <img src = 
      	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/board/boardSearchList.PNG">
@@ -1121,7 +1121,7 @@ div.HStyle17
 <P CLASS=Hstyle0><h3>게시글 상세 보기</h3>
 <br>
 <a href =
-     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardView.jsp">게시글 상세 보기.jsp </a>
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardView.jsp">게시글 상세 보기(Code).jsp </a>
 <br>
 <img src = 
      	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/board/boardView.PNG">
@@ -1130,7 +1130,7 @@ div.HStyle17
 <P CLASS=Hstyle0><h3>게시글 수정</h3>
 <br>
 <a href =
-     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardUpdate.jsp">게시글 수정.jsp </a>
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardUpdate.jsp">게시글 수정(Code).jsp </a>
 <br>
 <img src = 
      	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/board/boardUpdate.PNG">
@@ -1139,7 +1139,7 @@ div.HStyle17
 <P CLASS=Hstyle0><h3>게시글 패쓰워드 입력폼</h3>
 <br>
 <a href =
-     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardCheckPass.jsp">게시글 패쓰워드 입력폼.jsp </a>
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardCheckPass.jsp">게시글 패쓰워드 입력폼(Code).jsp </a>
 <br>
 <img src = 
      	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/board/boardCheckPass.PNG">
@@ -1148,7 +1148,7 @@ div.HStyle17
 <P CLASS=Hstyle0><h3>게시글 등록</h3>
 <br>
 <a href =
-     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardWrite.jsp">게시글 등록.jsp </a>
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardWrite.jsp">게시글 등록(Code).jsp </a>
 <br>
 <img src = 
      	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/board/boardWrite.PNG">
@@ -1157,7 +1157,7 @@ div.HStyle17
 <P CLASS=Hstyle0><h3>체크 결과</h3>
 <br>
 <a href =
-     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/checkSuccess.jsp">체크 결과.jsp </a>
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/checkSuccess.jsp">체크 결과(Code).jsp </a>
 <br>
 <h6>게시글 수정 체크 결과<h6>
 <img src = 
@@ -1171,7 +1171,7 @@ div.HStyle17
 <P CLASS=Hstyle0><h3>회원가입 폼</h3>
 <br>
 <a href =
-     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/member/join_form.jsp">회원가입 폼.jsp </a>
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/member/join_form.jsp">회원가입 폼(Code).jsp </a>
 <br>
 <img src = 
      	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/member/join_form.PNG">
@@ -1180,7 +1180,7 @@ div.HStyle17
 <P CLASS=Hstyle0><h3>마이 페이지</h3>
 <br>
 <a href =
-     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/member/my_page.jsp">마이 페이지.jsp </a>
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/member/my_page.jsp">마이 페이지(Code).jsp </a>
 <br>
 <img src = 
      	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/member/my_page.PNG">
@@ -1189,7 +1189,7 @@ div.HStyle17
 <P CLASS=Hstyle0><h3>회원 수정 폼</h3>
 <br>
 <a href =
-     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/member/update_member_detail.jsp">회원 수정 폼.jsp </a>
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/member/update_member_detail.jsp">회원 수정 폼(Code).jsp </a>
 <br>
 <img src = 
      	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/member/update_member_detail.PNG">
