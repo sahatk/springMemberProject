@@ -1088,7 +1088,7 @@ div.HStyle17
      	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardList.jsp">게시글 리스트.jsp </a>
 <br>
 <img src = 
-     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/board/boardList.jsp">
+     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/boradList.PNG">
 <br>
 
 <P CLASS=Hstyle0><h1>실행 동영상</h1>
