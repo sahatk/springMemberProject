@@ -1045,6 +1045,24 @@ div.HStyle17
 <br>
 
 <H1> JSP </H1>
+
+<P CLASS=Hstyle0><h3>상단 바</h3>
+<br>
+<a href =
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/menu/top.jsp">상단 바.jsp </a>
+<br>
+<img src = 
+     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/menu/top.PNG">
+<br>
+
+<P CLASS=Hstyle0><h3>인자 현황</h3>
+<br>
+<a href =
+     	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/menu/param_dash_board.jsp">인자 .jsp </a>
+<br>
+<img src = 
+     	"https://github.com/sahatk/springMemberProject/blob/main/show/JSP/menu/top.PNG">
+<br>
 	
 <P CLASS=Hstyle0><h3>검색 회원 현황</h3>
 <br>
