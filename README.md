@@ -1046,10 +1046,13 @@ div.HStyle17
 
 <H1> JSP </H1>
 	
-<P CLASS=Hstyle0><h6>검색 회원 현황</h6>
+<P CLASS=Hstyle0><h3>회원 검색 현황</h3>
 <br>
 <a href =
      	"https://github.com/sahatk/springMemberProject/blob/main/src/main/webapp/jsp/admin/search_members_list.jsp">회원 검색 현황.jsp </a>
+<br>
+<img src = 
+     	"">
 <br>
 
 
